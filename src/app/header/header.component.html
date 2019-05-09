@@ -1,0 +1,9 @@
+<div style="border: 1px solid;margin-bottom: 10px">
+    <p>Header component</p>
+    <p>{{message}}</p>
+    <input [(ngModel)]='message' (keyup)="newMessage()">
+    <p>Counter from service:{{getCounter()}}</p>
+    <div style="margin-top: 10px;margin-bottom: 10px">
+        <button (click)="increment()">Increment service counter</button>
+    </div>
+</div>
